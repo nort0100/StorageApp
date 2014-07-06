@@ -1,0 +1,8 @@
+C:\Users\Stuart\Stuart\StorageProject\StorageApp\StorageApp\StorageApp\bin\Debug\StorageApp.exe
+C:\Users\Stuart\Stuart\StorageProject\StorageApp\StorageApp\StorageApp\bin\Debug\StorageApp.pdb
+C:\Users\Stuart\Stuart\StorageProject\StorageApp\StorageApp\StorageApp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Stuart\Stuart\StorageProject\StorageApp\StorageApp\StorageApp\obj\Debug\StorageApp.mainForm.resources
+C:\Users\Stuart\Stuart\StorageProject\StorageApp\StorageApp\StorageApp\obj\Debug\StorageApp.Properties.Resources.resources
+C:\Users\Stuart\Stuart\StorageProject\StorageApp\StorageApp\StorageApp\obj\Debug\StorageApp.csproj.GenerateResource.Cache
+C:\Users\Stuart\Stuart\StorageProject\StorageApp\StorageApp\StorageApp\obj\Debug\StorageApp.exe
+C:\Users\Stuart\Stuart\StorageProject\StorageApp\StorageApp\StorageApp\obj\Debug\StorageApp.pdb
