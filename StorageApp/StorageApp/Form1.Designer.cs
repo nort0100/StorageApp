@@ -46,8 +46,17 @@
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eXitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imageBox = new System.Windows.Forms.PictureBox();
+            this.descriptionTextBox = new System.Windows.Forms.TextBox();
+            this.addButton = new System.Windows.Forms.Button();
+            this.modifyButton = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.totalsButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
+            this.mainTab.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageBox)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -66,6 +75,13 @@
             // 
             // mainTab
             // 
+            this.mainTab.Controls.Add(this.exitButton);
+            this.mainTab.Controls.Add(this.totalsButton);
+            this.mainTab.Controls.Add(this.deleteButton);
+            this.mainTab.Controls.Add(this.modifyButton);
+            this.mainTab.Controls.Add(this.addButton);
+            this.mainTab.Controls.Add(this.descriptionTextBox);
+            this.mainTab.Controls.Add(this.imageBox);
             this.mainTab.Location = new System.Drawing.Point(4, 22);
             this.mainTab.Name = "mainTab";
             this.mainTab.Padding = new System.Windows.Forms.Padding(3);
@@ -156,7 +172,7 @@
             this.aboutToolStripMenuItem1});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Text = "A&bout";
             // 
             // aboutToolStripMenuItem1
             // 
@@ -202,11 +218,76 @@
             this.eXitToolStripMenuItem.Name = "eXitToolStripMenuItem";
             this.eXitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.eXitToolStripMenuItem.Text = "E&xit";
+            this.eXitToolStripMenuItem.Click += new System.EventHandler(this.eXitToolStripMenuItem_Click);
+            // 
+            // imageBox
+            // 
+            this.imageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imageBox.Location = new System.Drawing.Point(567, 27);
+            this.imageBox.Name = "imageBox";
+            this.imageBox.Size = new System.Drawing.Size(156, 137);
+            this.imageBox.TabIndex = 0;
+            this.imageBox.TabStop = false;
+            // 
+            // descriptionTextBox
+            // 
+            this.descriptionTextBox.Enabled = false;
+            this.descriptionTextBox.Location = new System.Drawing.Point(567, 216);
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.Size = new System.Drawing.Size(156, 20);
+            this.descriptionTextBox.TabIndex = 1;
+            // 
+            // addButton
+            // 
+            this.addButton.Location = new System.Drawing.Point(54, 394);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.TabIndex = 2;
+            this.addButton.Text = "&Add";
+            this.addButton.UseVisualStyleBackColor = true;
+            // 
+            // modifyButton
+            // 
+            this.modifyButton.Location = new System.Drawing.Point(179, 393);
+            this.modifyButton.Name = "modifyButton";
+            this.modifyButton.Size = new System.Drawing.Size(75, 23);
+            this.modifyButton.TabIndex = 3;
+            this.modifyButton.Text = "&Modify";
+            this.modifyButton.UseVisualStyleBackColor = true;
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(295, 393);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(75, 23);
+            this.deleteButton.TabIndex = 4;
+            this.deleteButton.Text = "&Delete";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            // 
+            // totalsButton
+            // 
+            this.totalsButton.Location = new System.Drawing.Point(421, 392);
+            this.totalsButton.Name = "totalsButton";
+            this.totalsButton.Size = new System.Drawing.Size(75, 23);
+            this.totalsButton.TabIndex = 5;
+            this.totalsButton.Text = "&Totals";
+            this.totalsButton.UseVisualStyleBackColor = true;
+            // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(597, 393);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.TabIndex = 6;
+            this.exitButton.Text = "E&xit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(785, 516);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
@@ -215,8 +296,11 @@
             this.Name = "mainForm";
             this.Text = "Cigar Storage App v0.1";
             this.tabControl1.ResumeLayout(false);
+            this.mainTab.ResumeLayout(false);
+            this.mainTab.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,6 +326,13 @@
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eXitToolStripMenuItem;
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button totalsButton;
+        private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button modifyButton;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.TextBox descriptionTextBox;
+        private System.Windows.Forms.PictureBox imageBox;
     }
 }
 

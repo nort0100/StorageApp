@@ -23,5 +23,15 @@ namespace StorageApp
             //Display aboutform
             aboutForm.ShowDialog();
         }
+
+        private void eXitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
