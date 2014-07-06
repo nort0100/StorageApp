@@ -15,5 +15,13 @@ namespace StorageApp
         {
             InitializeComponent();
         }
+
+        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //new instance of about form
+            AboutBox aboutForm = new AboutBox();
+            //Display aboutform
+            aboutForm.ShowDialog();
+        }
     }
 }
