@@ -33,5 +33,10 @@ namespace StorageApp
         {
             this.Close();
         }
+
+        private void mainForm_Load(object sender, EventArgs e)
+        {
+            //Load current Image from table/database into picture box
+        }
     }
 }
