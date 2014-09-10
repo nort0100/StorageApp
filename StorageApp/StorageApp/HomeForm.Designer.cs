@@ -55,10 +55,32 @@
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.smokedImageBox = new System.Windows.Forms.PictureBox();
+            this.smokedTextBox = new System.Windows.Forms.TextBox();
+            this.giftImageBox = new System.Windows.Forms.PictureBox();
+            this.giftedTextBox = new System.Windows.Forms.TextBox();
+            this.orderImageBox = new System.Windows.Forms.PictureBox();
+            this.orderTextBox = new System.Windows.Forms.TextBox();
+            this.wishTextBox = new System.Windows.Forms.TextBox();
+            this.wishImageBox = new System.Windows.Forms.PictureBox();
+            this.smokedExitButton = new System.Windows.Forms.Button();
+            this.giftExitButton = new System.Windows.Forms.Button();
+            this.orderExitButton = new System.Windows.Forms.Button();
+            this.wishExitButton = new System.Windows.Forms.Button();
+            this.graphExitButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.mainTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBox)).BeginInit();
+            this.smokedTab.SuspendLayout();
+            this.giftedTab.SuspendLayout();
+            this.onOrderTab.SuspendLayout();
+            this.wishTab.SuspendLayout();
+            this.graphTab.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.smokedImageBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.giftImageBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderImageBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wishImageBox)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -141,22 +163,25 @@
             // descriptionTextBox
             // 
             this.descriptionTextBox.Enabled = false;
-            this.descriptionTextBox.Location = new System.Drawing.Point(567, 216);
+            this.descriptionTextBox.Location = new System.Drawing.Point(588, 213);
             this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(156, 20);
+            this.descriptionTextBox.Size = new System.Drawing.Size(160, 20);
             this.descriptionTextBox.TabIndex = 1;
             // 
             // imageBox
             // 
             this.imageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imageBox.Location = new System.Drawing.Point(567, 27);
+            this.imageBox.Location = new System.Drawing.Point(588, 28);
             this.imageBox.Name = "imageBox";
-            this.imageBox.Size = new System.Drawing.Size(156, 137);
+            this.imageBox.Size = new System.Drawing.Size(160, 120);
             this.imageBox.TabIndex = 0;
             this.imageBox.TabStop = false;
             // 
             // smokedTab
             // 
+            this.smokedTab.Controls.Add(this.smokedExitButton);
+            this.smokedTab.Controls.Add(this.smokedTextBox);
+            this.smokedTab.Controls.Add(this.smokedImageBox);
             this.smokedTab.Location = new System.Drawing.Point(4, 22);
             this.smokedTab.Name = "smokedTab";
             this.smokedTab.Padding = new System.Windows.Forms.Padding(3);
@@ -167,6 +192,9 @@
             // 
             // giftedTab
             // 
+            this.giftedTab.Controls.Add(this.giftExitButton);
+            this.giftedTab.Controls.Add(this.giftedTextBox);
+            this.giftedTab.Controls.Add(this.giftImageBox);
             this.giftedTab.Location = new System.Drawing.Point(4, 22);
             this.giftedTab.Name = "giftedTab";
             this.giftedTab.Size = new System.Drawing.Size(782, 468);
@@ -176,6 +204,9 @@
             // 
             // onOrderTab
             // 
+            this.onOrderTab.Controls.Add(this.orderExitButton);
+            this.onOrderTab.Controls.Add(this.orderTextBox);
+            this.onOrderTab.Controls.Add(this.orderImageBox);
             this.onOrderTab.Location = new System.Drawing.Point(4, 22);
             this.onOrderTab.Name = "onOrderTab";
             this.onOrderTab.Size = new System.Drawing.Size(782, 468);
@@ -185,6 +216,9 @@
             // 
             // wishTab
             // 
+            this.wishTab.Controls.Add(this.wishExitButton);
+            this.wishTab.Controls.Add(this.wishImageBox);
+            this.wishTab.Controls.Add(this.wishTextBox);
             this.wishTab.Location = new System.Drawing.Point(4, 22);
             this.wishTab.Name = "wishTab";
             this.wishTab.Size = new System.Drawing.Size(782, 468);
@@ -194,6 +228,7 @@
             // 
             // graphTab
             // 
+            this.graphTab.Controls.Add(this.graphExitButton);
             this.graphTab.Location = new System.Drawing.Point(4, 22);
             this.graphTab.Name = "graphTab";
             this.graphTab.Size = new System.Drawing.Size(782, 468);
@@ -229,25 +264,25 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newToolStripMenuItem.Text = "&New";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
             // eXitToolStripMenuItem
             // 
             this.eXitToolStripMenuItem.Name = "eXitToolStripMenuItem";
-            this.eXitToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.eXitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.eXitToolStripMenuItem.Text = "E&xit";
             this.eXitToolStripMenuItem.Click += new System.EventHandler(this.eXitToolStripMenuItem_Click);
             // 
@@ -268,7 +303,7 @@
             // columnsToolStripMenuItem
             // 
             this.columnsToolStripMenuItem.Name = "columnsToolStripMenuItem";
-            this.columnsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.columnsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.columnsToolStripMenuItem.Text = "&Columns";
             // 
             // aboutToolStripMenuItem
@@ -282,7 +317,7 @@
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem1.Text = "&About";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
@@ -297,8 +332,122 @@
             // hToolStripMenuItem
             // 
             this.hToolStripMenuItem.Name = "hToolStripMenuItem";
-            this.hToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.hToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.hToolStripMenuItem.Text = "&Help";
+            // 
+            // smokedImageBox
+            // 
+            this.smokedImageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.smokedImageBox.Location = new System.Drawing.Point(588, 28);
+            this.smokedImageBox.Name = "smokedImageBox";
+            this.smokedImageBox.Size = new System.Drawing.Size(160, 120);
+            this.smokedImageBox.TabIndex = 0;
+            this.smokedImageBox.TabStop = false;
+            // 
+            // smokedTextBox
+            // 
+            this.smokedTextBox.Location = new System.Drawing.Point(588, 213);
+            this.smokedTextBox.Name = "smokedTextBox";
+            this.smokedTextBox.Size = new System.Drawing.Size(160, 20);
+            this.smokedTextBox.TabIndex = 1;
+            // 
+            // giftImageBox
+            // 
+            this.giftImageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.giftImageBox.Location = new System.Drawing.Point(588, 28);
+            this.giftImageBox.Name = "giftImageBox";
+            this.giftImageBox.Size = new System.Drawing.Size(160, 120);
+            this.giftImageBox.TabIndex = 1;
+            this.giftImageBox.TabStop = false;
+            // 
+            // giftedTextBox
+            // 
+            this.giftedTextBox.Location = new System.Drawing.Point(588, 213);
+            this.giftedTextBox.Name = "giftedTextBox";
+            this.giftedTextBox.Size = new System.Drawing.Size(160, 20);
+            this.giftedTextBox.TabIndex = 2;
+            // 
+            // orderImageBox
+            // 
+            this.orderImageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.orderImageBox.Location = new System.Drawing.Point(588, 28);
+            this.orderImageBox.Name = "orderImageBox";
+            this.orderImageBox.Size = new System.Drawing.Size(160, 120);
+            this.orderImageBox.TabIndex = 2;
+            this.orderImageBox.TabStop = false;
+            // 
+            // orderTextBox
+            // 
+            this.orderTextBox.Location = new System.Drawing.Point(588, 213);
+            this.orderTextBox.Name = "orderTextBox";
+            this.orderTextBox.Size = new System.Drawing.Size(160, 20);
+            this.orderTextBox.TabIndex = 3;
+            // 
+            // wishTextBox
+            // 
+            this.wishTextBox.Location = new System.Drawing.Point(588, 213);
+            this.wishTextBox.Name = "wishTextBox";
+            this.wishTextBox.Size = new System.Drawing.Size(160, 20);
+            this.wishTextBox.TabIndex = 3;
+            // 
+            // wishImageBox
+            // 
+            this.wishImageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.wishImageBox.Location = new System.Drawing.Point(588, 28);
+            this.wishImageBox.Name = "wishImageBox";
+            this.wishImageBox.Size = new System.Drawing.Size(160, 120);
+            this.wishImageBox.TabIndex = 4;
+            this.wishImageBox.TabStop = false;
+            // 
+            // smokedExitButton
+            // 
+            this.smokedExitButton.Location = new System.Drawing.Point(597, 393);
+            this.smokedExitButton.Name = "smokedExitButton";
+            this.smokedExitButton.Size = new System.Drawing.Size(75, 23);
+            this.smokedExitButton.TabIndex = 7;
+            this.smokedExitButton.Text = "E&xit";
+            this.smokedExitButton.UseVisualStyleBackColor = true;
+            this.smokedExitButton.Click += new System.EventHandler(this.smokedExitButton_Click);
+            // 
+            // giftExitButton
+            // 
+            this.giftExitButton.Location = new System.Drawing.Point(597, 393);
+            this.giftExitButton.Name = "giftExitButton";
+            this.giftExitButton.Size = new System.Drawing.Size(75, 23);
+            this.giftExitButton.TabIndex = 7;
+            this.giftExitButton.Text = "E&xit";
+            this.giftExitButton.UseVisualStyleBackColor = true;
+            this.giftExitButton.Click += new System.EventHandler(this.giftExitButton_Click);
+            // 
+            // orderExitButton
+            // 
+            this.orderExitButton.Location = new System.Drawing.Point(597, 393);
+            this.orderExitButton.Name = "orderExitButton";
+            this.orderExitButton.Size = new System.Drawing.Size(75, 23);
+            this.orderExitButton.TabIndex = 7;
+            this.orderExitButton.Text = "E&xit";
+            this.orderExitButton.UseVisualStyleBackColor = true;
+            this.orderExitButton.Click += new System.EventHandler(this.orderExitButton_Click);
+            // 
+            // wishExitButton
+            // 
+            this.wishExitButton.Location = new System.Drawing.Point(597, 393);
+            this.wishExitButton.Name = "wishExitButton";
+            this.wishExitButton.Size = new System.Drawing.Size(75, 23);
+            this.wishExitButton.TabIndex = 7;
+            this.wishExitButton.Text = "E&xit";
+            this.wishExitButton.UseVisualStyleBackColor = true;
+            this.wishExitButton.Click += new System.EventHandler(this.wishExitButton_Click);
+            // 
+            // graphExitButton
+            // 
+            this.graphExitButton.Location = new System.Drawing.Point(597, 393);
+            this.graphExitButton.Name = "graphExitButton";
+            this.graphExitButton.Size = new System.Drawing.Size(75, 23);
+            this.graphExitButton.TabIndex = 7;
+            this.graphExitButton.Text = "E&xit";
+            this.graphExitButton.UseVisualStyleBackColor = true;
+            this.graphExitButton.Click += new System.EventHandler(this.graphExitButton_Click);
             // 
             // mainForm
             // 
@@ -317,8 +466,21 @@
             this.mainTab.ResumeLayout(false);
             this.mainTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBox)).EndInit();
+            this.smokedTab.ResumeLayout(false);
+            this.smokedTab.PerformLayout();
+            this.giftedTab.ResumeLayout(false);
+            this.giftedTab.PerformLayout();
+            this.onOrderTab.ResumeLayout(false);
+            this.onOrderTab.PerformLayout();
+            this.wishTab.ResumeLayout(false);
+            this.wishTab.PerformLayout();
+            this.graphTab.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.smokedImageBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.giftImageBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderImageBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wishImageBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,6 +515,19 @@
         private System.Windows.Forms.PictureBox imageBox;
         private System.Windows.Forms.ToolStripMenuItem tableToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem columnsToolStripMenuItem;
+        private System.Windows.Forms.PictureBox smokedImageBox;
+        private System.Windows.Forms.TextBox smokedTextBox;
+        private System.Windows.Forms.PictureBox giftImageBox;
+        private System.Windows.Forms.TextBox giftedTextBox;
+        private System.Windows.Forms.TextBox orderTextBox;
+        private System.Windows.Forms.PictureBox orderImageBox;
+        private System.Windows.Forms.PictureBox wishImageBox;
+        private System.Windows.Forms.TextBox wishTextBox;
+        private System.Windows.Forms.Button smokedExitButton;
+        private System.Windows.Forms.Button giftExitButton;
+        private System.Windows.Forms.Button orderExitButton;
+        private System.Windows.Forms.Button wishExitButton;
+        private System.Windows.Forms.Button graphExitButton;
     }
 }
 

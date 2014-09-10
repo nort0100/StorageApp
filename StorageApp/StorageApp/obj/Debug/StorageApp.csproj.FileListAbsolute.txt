@@ -7,3 +7,4 @@ C:\Users\Stuart\Stuart\StorageProject\StorageApp\StorageApp\StorageApp\obj\Debug
 C:\Users\Stuart\Stuart\StorageProject\StorageApp\StorageApp\StorageApp\obj\Debug\StorageApp.exe
 C:\Users\Stuart\Stuart\StorageProject\StorageApp\StorageApp\StorageApp\obj\Debug\StorageApp.pdb
 C:\Users\Stuart\Stuart\StorageProject\StorageApp\StorageApp\StorageApp\obj\Debug\StorageApp.AboutBox.resources
+C:\Users\Stuart\Stuart\StorageProject\StorageApp\StorageApp\StorageApp\obj\Debug\StorageApp.ExitFormA.resources
